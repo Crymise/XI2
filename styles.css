@@ -1,0 +1,62 @@
+.rgb-animate {
+	animation-iteration-count: infinite;
+	animation-duration: 40s;
+	animation-name: rgb_anim;
+}
+
+@keyframes rgb_anim {
+	from {
+		filter: hue-rotate(0deg);
+	}
+	50% {
+		filter: hue-rotate(360deg);
+	}
+	to {
+		filter: hue-rotate(0deg);
+	}
+}
+
+.content {
+	min-height: 50vh;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	background: black;
+}
+
+.content:last-child {
+	background: #de6161; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right bottom,
+		#2657eb,
+		#de6161
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right bottom,
+		#2657eb,
+		#de6161
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+a {
+	text-decoration: none;
+}
+
+.text{
+	font-family:'Jersey 10';
+	color: white;
+	font-size: 50px;
+	text-align: center;
+}
+.link{
+	font-family: 'Gochi Hand';
+	border: 3px solid;
+	border-radius: 15px;
+	width: 130px;
+	height: 30px;
+	color:blue;
+	background-color: whitesmoke;
+	text-align: center;
+}
